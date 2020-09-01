@@ -100,7 +100,7 @@ case $UP in
         echo "fuck you then?"
         ;;
 esac
-sudo apt install openssh-server samba steam wine openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen
+sudo apt install openssh-server filezilla samba steam wine openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen
 echo -e "Update complete!"
 
 ph=N
