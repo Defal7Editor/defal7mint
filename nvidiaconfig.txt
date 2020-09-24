@@ -1,0 +1,19 @@
+HDMI-0 1920x1080 59.93
+
+nvidia-settings --assign CurrentMetaMode="HDMI-0:1920x1080_59.93+0+0 { ForceFullCompositionPipeline = On }"
+
+Lines to add in the "xorg.conf":
+Section "Device"
+    Option         "NoLogo" "1"
+    Option         "RenderAccel" "1"
+    Option         "TripleBuffer" "true"
+    Option         "MigrationHeuristic" "greedy"
+    Option         "AccelMethod" "sna"
+    Option         "TearFree"    "true"
+EndSection
+
+Back up the old one:
+
+sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.old
+
+Move the new one:
