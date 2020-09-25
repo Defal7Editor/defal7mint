@@ -1,5 +1,10 @@
 #!/bin/bash
 
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
+sudo apt install --install-recommends winehq-stable
+
 #if [ "$EUID" -ne 0 ]
 #then
 #    echo "Please run this script with sudo."
@@ -100,7 +105,7 @@ case $UP in
         echo "fuck you then?"
         ;;
 esac
-sudo apt install openssh-server vinagre tightvncserver joystick jstest-gtk stacer filezilla samba steam wine bleachbit openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen
+sudo apt install openssh-server vinagre tightvncserver joystick jstest-gtk stacer filezilla samba steam wine bleachbit openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen gimp
 echo -e "Update complete!"
 
 ph=N

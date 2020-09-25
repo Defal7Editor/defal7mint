@@ -1,3 +1,5 @@
+xrandr
+
 HDMI-0 1920x1080 59.93
 
 nvidia-settings --assign CurrentMetaMode="HDMI-0:1920x1080_59.93+0+0 { ForceFullCompositionPipeline = On }"
