@@ -1,6 +1,6 @@
 #!/bin/bash
-
-sudo pacman -S openssh-server filezilla samba steam wine bleachbit openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk lutris glances screen gimp github-cli
 sudo pacman -Syu
+sudo pacman -S openssh filezilla samba steam discord wine bleachbit ffmpeg rabbitvcs-cli flameshot lutris glances screen gimp github-cli neofetch
 
+# open ssh config
 
