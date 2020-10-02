@@ -105,7 +105,7 @@ case $UP in
         echo "fuck you then?"
         ;;
 esac
-sudo apt install openssh-server vinagre tightvncserver joystick jstest-gtk stacer filezilla samba steam wine bleachbit openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen gimp keepassxc
+sudo apt install openssh-server vinagre tightvncserver joystick jstest-gtk stacer filezilla samba steam wine bleachbit openjdk-14-jdk ffmpeg git rabbitvcs-cli flameshot default-jdk playonlinux glances screen gimp keepassxc grub-customizer
 sudo apt full-upgrade
 sudo apt autoremove
 echo -e "Update complete!"
