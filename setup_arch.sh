@@ -5,7 +5,7 @@ sudo pacman -S openssh filezilla samba base-devel steam discord wine bleachbit f
 #yay
 cd $HOME/Documents
 git clone https://aur.archlinux.org/yay.git
-cd yay
+cd $HOME/Documents/yay
 makepkg -s
 sudo pacman -U *
 
