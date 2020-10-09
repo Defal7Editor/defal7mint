@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo pacman -Syu
-sudo pacman -S openssh filezilla samba base-devel steam discord wine bleachbit ffmpeg rabbitvcs-cli flameshot lutris glances screen gimp github-cli neofetch keepassxc
+sudo pacman -S openssh filezilla samba base-devel steam discord wine bleachbit ffmpeg rabbitvcs-cli flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller
 
 #yay
 cd $HOME/Documents
