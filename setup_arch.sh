@@ -5,6 +5,9 @@ sudo pacman -S openssh filezilla samba base-devel steam discord wine bleachbit f
 #auto-cpufreq
 sudo auto-cpufreq --install
 
+#debtap
+sudo deptap -u
+
 #yay
 cd $HOME/Documents
 git clone https://aur.archlinux.org/yay.git
