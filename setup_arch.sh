@@ -1,12 +1,6 @@
 #!/bin/bash
 sudo pacman -Syu
-sudo pacman -S openssh filezilla samba base-devel steam discord wine bleachbit ffmpeg rabbitvcs-cli flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller auto-cpufreq
-
-#auto-cpufreq
-sudo auto-cpufreq --install
-
-#debtap
-sudo deptap -u
+sudo pacman -S openssh filezilla samba base-devel discord bleachbit ffmpeg flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller
 
 #yay
 cd $HOME/Documents
@@ -16,7 +10,13 @@ makepkg -s
 sudo pacman -U *
 
 #AUR stuff
-yay -S github-desktop-bin minecraft visual-studio-code-bin debtap
+yay -S github-desktop-bin minecraft visual-studio-code-bin debtap auto-cpufreq rabbitvcs
+
+#Debtap
+sudo debtap -u
+
+#auto-cpufreq
+sudo auto-cpufreq --install
 
 # open ssh config
-
+systemctl enable ssh
