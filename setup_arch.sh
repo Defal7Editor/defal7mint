@@ -1,11 +1,11 @@
 #!/bin/bash
 sudo pacman -Syu
-sudo pacman -S openssh filezilla samba base-devel discord bleachbit ffmpeg flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller grub grub-customizer
+sudo pacman -S openssh filezilla samba base-devel discord bleachbit ffmpeg flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio
 
 #yay
-cd $HOME/Documents
+cd $HOME
 git clone https://aur.archlinux.org/yay.git
-cd $HOME/Documents/yay
+cd $HOME/yay
 makepkg -s
 sudo pacman -U *
 
