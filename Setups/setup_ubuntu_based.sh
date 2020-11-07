@@ -7,7 +7,7 @@ sudo apt install --install-recommends winehq-stable
 
 #if [ "$EUID" -ne 0 ]
 #then
-#    echo "Please run this script with sudo."
+#    echo "Please run this script as super user."
 #    exit
 #fi
 
