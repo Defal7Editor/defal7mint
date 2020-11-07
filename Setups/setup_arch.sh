@@ -36,6 +36,44 @@ echo "---------------------------"
 #flatpak
 flatpak install unityhub libreoffice
 
+DOAS="Y"
+AWN=1
+echo "------------------------------------"
+echo "   Would you like to install doas?  "
+echo "------------------------------------"
+read -p "[Y/n]" DOAS
+
+case "$DOAS" in
+ [yY] | [yY][eE][sS])
+	echo "Doas will be installed in your machine."
+	AWN=1	
+	;;
+ [nN] | [nN][oO])
+	echo "Doas will NOT be installed in your machine."
+	echo "See ya later!"
+	exit
+	;;
+ *)
+	echo "Doas will be installed in your machine."
+	AWN=1
+	;;
+esac
+DOASDIR=""
+
+echo "Type the prefered directory for the doas installation"
+read -p "" DOASDIR
+if [ ! -d "$DOASDIR" ]
+then
+	echo "Not a Directory, exiting."
+fi
+
+echo "The selected directory is: $DOASDIR"
+git clone https://github.com/slicer69/doas "$DOASDIR/doas"
+cd "$DOASDIR/doas"
+make
+make install
+
+
 #yay
 cd $HOME
 git clone https://aur.archlinux.org/yay.git
