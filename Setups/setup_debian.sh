@@ -24,7 +24,11 @@ apt update
 echo "------------------------------------"
 echo "         Installing packages        "
 echo "------------------------------------"
-apt install ukuu flatpak filezilla flameshot keepassxc bleachbit htop terminator git
+apt install ukuu flatpak filezilla flameshot keepassxc bleachbit htop terminator git python2
+
+#hacking stuff
+
+apt install proxychains
 
 DOAS="Y"
 AWN=1
