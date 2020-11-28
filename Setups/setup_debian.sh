@@ -27,9 +27,9 @@ echo "------------------------------------"
 apt install ukuu flatpak filezilla flameshot keepassxc bleachbit htop terminator git python2 cpu-x
 
 #coding stuff
-apt-get install libncurses5-dev libncursesw5-dev glade
-#hacking stuff
+apt-get install libncurses5-dev libncursesw5-dev libgtk-3-dev glade
 
+#hacking stuff
 apt install proxychains
 
 DOAS="Y"
