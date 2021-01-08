@@ -33,7 +33,7 @@ pacman -S openssh filezilla samba base-devel discord bleachbit ffmpeg flameshot 
 echo "----------------------------"
 echo " Installing Important Stuff "
 echo "----------------------------"
-pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk
+pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn
 
 
 #echo "---------------------------"
