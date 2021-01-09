@@ -35,6 +35,9 @@ echo " Installing Important Stuff "
 echo "----------------------------"
 pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn bleachbit ffmpeg
 
+echo "VIM"
+
+source vim_plug.sh
 
 #echo "---------------------------"
 #echo "    Installing Flatpaks    "
