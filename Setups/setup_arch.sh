@@ -28,12 +28,12 @@ pacman -Syu
 echo "---------------------------"
 echo "    Installing Packages    "
 echo "---------------------------"
-pacman -S openssh filezilla samba base-devel discord bleachbit ffmpeg flameshot lutris glances screen gimp github-cli neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio flatpak figlet libreoffice vim
+pacman -S openssh filezilla samba base-devel discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio flatpak figlet libreoffice peek 
 
 echo "----------------------------"
 echo " Installing Important Stuff "
 echo "----------------------------"
-pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn
+pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn bleachbit ffmpeg
 
 
 #echo "---------------------------"
