@@ -28,7 +28,7 @@ pacman -Syu
 echo "---------------------------"
 echo "    Installing Packages    "
 echo "---------------------------"
-pacman -S openssh filezilla samba base-devel discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio flatpak figlet libreoffice peek 
+pacman -S openssh samba base-devel discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio flatpak figlet libreoffice peek moc 
 
 echo "----------------------------"
 echo " Installing Important Stuff "
@@ -38,6 +38,12 @@ pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility
 echo "VIM"
 
 source vim_plug.sh
+
+echo "youtube-dl"
+
+curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
+
 
 #echo "---------------------------"
 #echo "    Installing Flatpaks    "
@@ -84,14 +90,15 @@ make install
 
 
 #yay
-cd $HOME
-git clone https://aur.archlinux.org/yay.git
-#cd $HOME/yay
-#makepkg -s
-#sudo pacman -U *
+mkdir $HOME/Documents
+cd $HOME/Documents
+cp ../yay $HOME/Documents
+makepkg -s
+sudo pacman -U yay-10.1.2-1-x86_64.pkg.tar.zst 
+yay -Syu
 
 #AUR stuff
-#yay -S github-desktop-bin minecraft visual-studio-code-bin debtap auto-cpufreq rabbitvcs ttf-ms-fonts
+yay -S librewolf github-desktop-bin minecraft debtap auto-cpufreq ttf-ms-fonts mint-y-icons
 
 #Debtap
 #debtap -u
