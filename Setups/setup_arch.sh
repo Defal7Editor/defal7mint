@@ -22,7 +22,7 @@ fi
 packages="openssh samba discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub-customizer kdenlive obs-studio figlet libreoffice peek moc" 
 imp_packages="kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn bleachbit ffmpeg feh grub" 
 
-AUR=""
+AUR="yay -S librewolf github-desktop-bin minecraft debtap auto-cpufreq ttf-ms-fonts mint-y-icons"
 
 echo "---------------------------"
 echo "    Updating the system    "
@@ -99,10 +99,9 @@ cd $HOME/Documents
 cp ../yay $HOME/Documents
 makepkg -s
 sudo pacman -U yay-10.1.2-1-x86_64.pkg.tar.zst 
-yay -Syu
 
 #AUR stuff
-yay -S librewolf github-desktop-bin minecraft debtap auto-cpufreq ttf-ms-fonts mint-y-icons
+yay -Syu $AUR
 
 #Debtap
 #debtap -u
