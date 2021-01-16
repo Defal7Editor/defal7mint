@@ -19,6 +19,10 @@ then
 	exit
 fi
 
+packages="openssh samba discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub-customizer kdenlive obs-studio figlet libreoffice peek moc" 
+imp_packages="kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn bleachbit ffmpeg feh grub" 
+
+AUR=""
 
 echo "---------------------------"
 echo "    Updating the system    "
@@ -28,12 +32,12 @@ pacman -Syu
 echo "---------------------------"
 echo "    Installing Packages    "
 echo "---------------------------"
-pacman -S openssh samba base-devel discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub grub-customizer kdenlive obs-studio flatpak figlet libreoffice peek moc 
+pacman -S $packages
 
 echo "----------------------------"
 echo " Installing Important Stuff "
 echo "----------------------------"
-pacman -S atom kate file-roller virt-manager gnome-calculator gnome-disk-utility gnome-multi-writer jre8-openjdk svn bleachbit ffmpeg
+pacman -S $imp_packages
 
 echo "VIM"
 
