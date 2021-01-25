@@ -24,6 +24,8 @@ imp_packages="qbittorrent kate file-roller virt-manager gnome-calculator gnome-d
 
 AUR="librewolf-bin github-desktop-bin minecraft debtap auto-cpufreq ttf-ms-fonts mint-y-icons"
 
+cp ../../configs/pacman.conf /etc/
+
 echo "---------------------------"
 echo "    Updating the system    "
 echo "---------------------------"
@@ -41,7 +43,7 @@ pacman -S $imp_packages
 
 echo "VIM"
 
-source vim_plug.sh
+source nvim_plug.sh
 
 echo "youtube-dl"
 
@@ -96,16 +98,15 @@ make install
 #yay
 mkdir $HOME/Documents
 cd $HOME/Documents
-cp ../yay $HOME/Documents
-makepkg -s
-sudo pacman -U yay-10.1.2-1-x86_64.pkg.tar.zst 
+git clone https://aur.archlinux.org/paru-bin.git
+makepkg -sri
 
 #AUR stuff
-yay -Syu 
-yay -S $AUR
+paru -Syu 
+paru -S $AUR
 
 #Debtap
-#debtap -u
+debtap -u
 
 #auto-cpufreq
 #auto-cpufreq --install
