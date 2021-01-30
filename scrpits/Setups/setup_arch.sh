@@ -71,8 +71,6 @@ case "$DOAS" in
 	;;
  [nN] | [nN][oO])
 	echo "Doas will NOT be installed in your machine."
-	echo "See ya later!"
-	exit
 	;;
  *)
 	echo "Doas will be installed in your machine."
