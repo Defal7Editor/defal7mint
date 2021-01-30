@@ -96,9 +96,7 @@ make install
 
 
 #yay
-mkdir $HOME/Documents
-cd $HOME/Documents
-git clone https://aur.archlinux.org/paru-bin.git
+git clone https://aur.archlinux.org/paru-bin.git $HOME/Documents/paru-git
 makepkg -sri
 
 #AUR stuff
