@@ -22,18 +22,19 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
-Plug 'nanotech/jellybeans.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kitao/unity_dict'
+Plug 'morhetz/gruvbox'
+" Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
-colorscheme jellybeans
-set background=dark 
+colorscheme gruvbox 
+" set background=dark 
 
 let mapleader = " "
 let g:netrw_brwose_split=2
