@@ -29,6 +29,7 @@ Plug 'mbbill/undotree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kitao/unity_dict'
 Plug 'morhetz/gruvbox'
+Plug 'calviken/vim-gdscript3'
 " Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
