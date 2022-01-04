@@ -6,7 +6,7 @@ echo "      AUR"
 echo " setup script"
 echo "---------------------------"
 
-AUR="dxvk-bin librewolf-bin github-desktop-bin minecraft debtap auto-cpufreq ttf-ms-fonts mint-y-icons"
+AUR="librewolf-bin github-desktop-bin auto-cpufreq ttf-ms-fonts mint-y-icons"
 
 PARU=1
 
