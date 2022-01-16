@@ -19,7 +19,7 @@ then
 	exit
 fi
 
-packages="nvim openssh samba discord flameshot lutris htop screen gimp neofetch keepassxc file-roller grub-customizer kdenlive obs-studio libreoffice peek mpv"
+packages="neovim openssh discord flameshot lutris htop tmux gimp neofetch keepassxc file-roller grub-customizer kdenlive obs-studio libreoffice peek mpv nemo"
 imp_packages="qbittorrent gnome-multi-writer ffmpeg feh grub doas sudo net-tools inetutils xcompmgr xbindkeys"
 
 cp ../configs/pacman.conf /etc/
@@ -42,7 +42,7 @@ pacman -S $imp_packages
 echo "----------------------------"
 echo "        Vim stuff           "
 echo "----------------------------"
-source nvim_plug.sh
+source nvimplug.sh
 
 echo "----------------------------"
 echo "        Rice stuff          "

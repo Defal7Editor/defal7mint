@@ -25,6 +25,8 @@ else
 fi
 }
 
+mkdir RICE
+
 if [[ $1 = clean ]]
 then
 	rm -rf RICE
