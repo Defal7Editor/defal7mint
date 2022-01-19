@@ -20,7 +20,7 @@ then
 fi
 
 packages="neovim openssh discord flameshot lutris htop tmux gimp neofetch keepassxc file-roller grub-customizer kdenlive obs-studio libreoffice peek mpv nemo"
-imp_packages="qbittorrent gnome-multi-writer ffmpeg feh grub doas sudo net-tools inetutils xcompmgr xbindkeys"
+imp_packages="qbittorrent gnome-multi-writer ffmpeg feh grub doas sudo net-tools inetutils xcompmgr xbindkeys ntfs-3g os-prober"
 
 cp ../configs/pacman.conf /etc/
 
