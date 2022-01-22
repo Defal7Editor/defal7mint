@@ -7,3 +7,6 @@ Update Jan 2022:
 TODO:
 - Install and configure a Desktop Manager (sddm or lightdm)
 - drugs
+
+GTK Themes to not forget:
+https://www.gnome-look.org/p/1258305
