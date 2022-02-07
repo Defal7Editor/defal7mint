@@ -27,13 +27,17 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
+" Plug 'kitao/unity_dict'
 " Plug 'morhetz/gruvbox'
 Plug 'calviken/vim-gdscript3'
+Plug 'joshdick/onedark.vim'
+" Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
-" colorscheme gruvbox 
-" set background=dark 
+colorscheme onedark
+set background=dark 
 
 let mapleader = " "
 let g:netrw_brwose_split=2

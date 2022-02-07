@@ -48,25 +48,19 @@ cp $BG ~/.bg
 cd RICE/
 
 DMENU=dmenu-5.0.tar.gz
-SCROLL=scroll-0.1.tar.gz
 Clone $DMENU suckless
-Clone $SCROLL suckless
+Clone scroll git 
 
 echo "[ Extracting dmenu ]"
 echo
 tar -xzvf dmenu-5.0.tar.gz
-echo "[ Extracting scroll ]"
-echo
-tar -xzvf scroll-0.1.tar.gz
-echo
 
 #Cleaning stuff
 Echo "[ Cleaning Stuff ]"
-rm scroll-0.1.tar.gz
 rm dmenu-5.0.tar.gz
 
 #dependencies
-cd scroll-0.1/
+cd scroll/
 $SUDO make clean install
 
 #stuff
