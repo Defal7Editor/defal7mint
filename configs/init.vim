@@ -3,7 +3,6 @@ syntax on
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=2
-set expandtab
 set smartindent
 set nu
 set nowrap
@@ -14,6 +13,10 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set hidden
+
+" show tabs
+set list
+set listchars=tab:>- 
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -27,7 +30,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'ervandew/supertab'
 " Plug 'kitao/unity_dict'
 " Plug 'morhetz/gruvbox'
 Plug 'calviken/vim-gdscript3'
