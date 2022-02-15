@@ -3,7 +3,7 @@ syntax on
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=2
-set smartindent
+"set smartindent
 set nu
 set nowrap
 set smartcase
@@ -34,17 +34,20 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'morhetz/gruvbox'
 Plug 'calviken/vim-gdscript3'
 Plug 'joshdick/onedark.vim'
+Plug 'miyakogi/seiya.vim'
 " Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
 colorscheme onedark
-set background=dark 
+"set background=dark 
 
 let mapleader = " "
 let g:netrw_brwose_split=2
 let g:netrw_banner= 0
 let g:netrw_winsize= 25
+" transparency
+let g:seiya_auto_enable=1
 
 let g:ctrlp_use_caching = 0
 
