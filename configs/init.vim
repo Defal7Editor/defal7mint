@@ -35,6 +35,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'calviken/vim-gdscript3'
 Plug 'joshdick/onedark.vim'
 Plug 'miyakogi/seiya.vim'
+Plug 'vim-airline/vim-airline'
 " Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
@@ -50,6 +51,11 @@ let g:netrw_winsize= 25
 let g:seiya_auto_enable=1
 
 let g:ctrlp_use_caching = 0
+
+let g:airline#extensions#tabline#enabled = 1
+nmap <C-n> :tabnext<CR>
+nmap <C-b> :tabprevious<CR>
+nmap <C-c> :tabnew<CR>
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 40<CR>
